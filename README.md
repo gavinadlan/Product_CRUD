@@ -4,27 +4,27 @@ Aplikasi sederhana untuk mengelola data **Produk** menggunakan Laravel 11, Tailw
 
 ## 🔧 Tech Stack
 
--   Laravel 11
--   Tailwind CSS
--   MySQL
--   Blade Templates
+- Laravel 11  
+- Tailwind CSS  
+- MySQL  
+- Blade Templates  
 
 ## ✅ Fitur Aplikasi
 
--   **List Produk**: Menampilkan semua produk dalam bentuk tabel.
--   **Tambah Produk**: Form untuk menambahkan produk baru dengan validasi.
--   **Edit Produk**: Mengedit data produk yang sudah ada.
--   **Hapus Produk**: Menghapus produk dari database dengan konfirmasi.
--   **Seeder**: Berisi minimal 5 data produk awal.
+- **List Produk**: Menampilkan semua produk dalam bentuk tabel.  
+- **Tambah Produk**: Form untuk menambahkan produk baru dengan validasi.  
+- **Edit Produk**: Mengedit data produk yang sudah ada.  
+- **Hapus Produk**: Menghapus produk dari database dengan konfirmasi.  
+- **Seeder**: Berisi minimal 5 data produk awal.  
 
 ## ⚙️ Struktur Tabel Product
 
--   `id` (Primary Key, Auto Increment)
--   `name` (String, max: 100 karakter)
--   `description` (Text, optional)
--   `price` (Decimal, 10,2)
--   `stock` (Integer, default: 0)
--   `created_at` & `updated_at` (Timestamps)
+- `id` (Primary Key, Auto Increment)  
+- `name` (String, max: 100 karakter)  
+- `description` (Text, optional)  
+- `price` (Decimal, 10,2)  
+- `stock` (Integer, default: 0)  
+- `created_at` & `updated_at` (Timestamps)  
 
 ---
 
@@ -32,12 +32,14 @@ Aplikasi sederhana untuk mengelola data **Produk** menggunakan Laravel 11, Tailw
 
 ```bash
 # Clone repo
-git clone https://github.com/username/nama-repo.git
-cd nama-repo
+git clone https://github.com/gavinadlan/Product_CRUD.git
+cd Product_CRUD
 
-# Install dependency
+# Install dependency backend
 composer install
-npm install && npm run build
+
+# Install dependency frontend (Tailwind CSS, Vite)
+npm install
 
 # Copy file env dan generate key
 cp .env.example .env
@@ -45,16 +47,18 @@ php artisan key:generate
 
 # Atur konfigurasi database di file .env
 # Contoh:
-#DB_CONNECTION=mysql
-#DB_HOST=127.0.0.1
-#DB_PORT=8889
-#DB_DATABASE=product_crud
-#DB_USERNAME=root
-#DB_PASSWORD=root
+# DB_CONNECTION=mysql
+# DB_HOST=127.0.0.1
+# DB_PORT=8889
+# DB_DATABASE=product_crud
+# DB_USERNAME=root
+# DB_PASSWORD=root
 
 # Jalankan migrasi & seeder
 php artisan migrate --seed
 
-# Jalankan server
+# Jalankan server Laravel
 php artisan serve
-```
+
+# Jalankan Vite (Tailwind CSS)
+npm run dev
