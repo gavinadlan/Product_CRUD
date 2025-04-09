@@ -45,9 +45,12 @@ php artisan key:generate
 
 # Atur konfigurasi database di file .env
 # Contoh:
-# DB_DATABASE=produk_db
-# DB_USERNAME=root
-# DB_PASSWORD=
+#DB_CONNECTION=mysql
+#DB_HOST=127.0.0.1
+#DB_PORT=8889
+#DB_DATABASE=product_crud
+#DB_USERNAME=root
+#DB_PASSWORD=root
 
 # Jalankan migrasi & seeder
 php artisan migrate --seed
