@@ -1,6 +1,6 @@
 # 🛠️ Technical Test - Web Development Intern (Aksesmu)
 
-Aplikasi sederhana untuk mengelola data **Produk** menggunakan Laravel 11, Tailwind CSS, dan MySQL, sesuai dengan ketentuan dari tim rekrutmen **PT Sumber Trijaya Lestari (Aksesmu)**.
+Aplikasi sederhana untuk mengelola data **Produk** menggunakan Laravel 11, Tailwind CSS, dan MySQL.
 
 ## 🔧 Tech Stack
 
